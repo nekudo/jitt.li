@@ -1,0 +1,197 @@
+/** Home - Recent Walls
+ */
+#jiRecentWalls .jiRecentWallsWrapper {
+	width: 500px;
+	margin: auto;
+}
+#jiRecentWalls .jiRecentWall {
+	float:left;
+	margin: 2px;
+	background-color: #000;
+	font-family: monospace;
+	font-size:13px;
+	font-weight:bold;
+	text-decoration:none;
+	padding: 2px 4px;
+	color: #fff;
+
+	-webkit-transform: rotate(-2deg);
+	-moz-transform: rotate(-2deg);
+	-o-transform: rotate(-2deg);
+	transform: rotate(-2deg);
+
+	-webkit-transition: -webkit-transform 0.1s ease-in;
+	-moz-transition: -moz-transform 0.1s ease-in;
+	-o-transition: -o-transform 0.1s ease-in;
+	transition: transform 0.1s ease-in;
+}
+#jiRecentWalls .jiRecentWall:nth-child(2n) {
+	background-color:#666;
+	font-size:17px;
+
+	-webkit-transform: rotate(2deg);
+	-moz-transform: rotate(2deg);
+	-o-transform: rotate(2deg);
+	transform: rotate(2deg);
+}
+#jiRecentWalls .jiRecentWall:nth-child(4n) {
+	background-color:#4c4c4c;
+	font-size:15px;
+
+	-webkit-transform: rotate(-8deg);
+	-moz-transform: rotate(-8deg);
+	-o-transform: rotate(-8deg);
+	transform: rotate(-8deg);
+}
+#jiRecentWalls .jiRecentWall:nth-child(5n) {
+	background-color:#333;
+	font-size:18px;
+
+	-webkit-transform: rotate(-3deg);
+	-moz-transform: rotate(-3deg);
+	-o-transform: rotate(-3deg);
+	transform: rotate(-3deg);
+}
+#jiRecentWalls .jiRecentWall:hover {
+	color:#fff;
+	z-index:10000;
+
+	-webkit-box-shadow: 0 0 5px rgb(201,201,201);
+	-moz-box-shadow: 0 0 5px rgb(201,201,201);
+	-o-box-shadow: 0 0 5px rgb(201,201,201);
+	box-shadow: 0 0 10px rgb(0,130,200);
+
+	-webkit-transform: rotate(3deg) scale(1.2);
+	-moz-transform: rotate(3deg) scale(1.2);
+	-o-transform: rotate(3deg) scale(1.2);
+	transform: rotate(3deg) scale(1.2);
+}
+#jiRecentWalls .jiRecentWall:nth-child(2n):hover {
+	-webkit-transform: rotate(-3deg) scale(1.2);
+	-moz-transform: rotate(-3deg) scale(1.2);
+	-o-transform: rotate(-3deg) scale(1.2);
+	transform: rotate(-3deg) scale(1.2);
+}
+#jiRecentWalls .jiRecentWall:nth-child(4n):hover {
+	-webkit-transform: rotate(3deg) scale(1.2);
+	-moz-transform: rotate(3deg) scale(1.2);
+	-o-transform: rotate(3deg) scale(1.2);
+	transform: rotate(3deg) scale(1.2);
+}
+#jiRecentWalls .jiRecentWall:nth-child(5n):hover {
+	-webkit-transform: rotate(2deg) scale(1.2);
+	-moz-transform: rotate(2deg) scale(1.2);
+	-o-transform: rotate(2deg) scale(1.2);
+	transform: rotate(2deg) scale(1.2);
+}
+
+/** Home - About
+ */
+#jiAbout {
+	margin-top: 50px;
+}
+
+#jiStats {
+	margin-top: 50px;
+}
+
+/** Wall - Tweet Box
+ */
+#tweetcontainer .wrapperLeft {
+
+}
+#tweetcontainer .wrapperRight {
+	margin-left: 0;
+}
+#tweetcontainer .tweet {
+	margin-bottom: 20px;
+}
+#tweetcontainer .tweet_text {
+	position: relative;
+	padding: 15px;
+	margin-left: 10px;
+	font-size: 13px;
+	border: 1px solid #ddd;
+	background: #eee;
+	background: -webkit-gradient(linear, 0 0, 0 100%, from(#fff), to(#eee));
+	background: -moz-linear-gradient(#fff, #eee);
+	background: -o-linear-gradient(#fff, #eee);
+	background: linear-gradient(#fff, #eee);
+	border-radius:3px;
+		-webkit-border-radius:3px;
+		-moz-border-radius:3px;
+
+}
+#tweetcontainer .tweet_text:before {
+	content:"";
+	position:absolute;
+	top: 30px;
+	left: -10px;
+	border-width: 6px 10px 6px 0px;
+	border-style: solid;
+	border-color: transparent #ddd;
+    display: block;
+    width: 0;
+}
+
+#tweetcontainer .tweet_userpic {
+	width: 48px;
+	margin-top: 2px;
+	padding: 1px;
+}
+#tweetcontainer .tweet_userpic img {
+	width: 48px;
+	border-radius: 24px;
+	box-shadow: 1px 2px 2px -1px rgba(0, 0, 0, 1);
+}
+#tweetcontainer .tweet_meta {
+	margin-left: 14px;
+	font-size: 11px;
+}
+#tweetcontainer .tweet_name {
+	font-weight: bold;
+}
+#tweetcontainer .tweet_nick {
+
+}
+#tweetcontainer .tweet_date {
+
+}
+
+/** Wall - Tabs
+ */
+#tabStats {
+ 	position: absolute;
+ 	top: 0px;
+ 	right: 40px;
+ 	z-index: 5;
+}
+#tabStats .tabHeadline {
+ 	background-color: rgba(0,0,0, 0.8);
+ 	color: #ccc;
+ 	font-size: 16px;
+ 	font-weight: bold;
+ 	padding: 5px 20px 5px 20px;
+ 	border-bottom-left-radius: 4px;
+	border-bottom-right-radius: 4px;
+	cursor: pointer;
+}
+#tabStats .tabContent {
+ 	background-color: rgba(0,0,0, 0.8);
+ 	padding: 10px;
+ 	color:  #ccc;
+ 	font-size: 13px;
+}
+
+/** Footer
+ */
+ #jiFooter {
+	 padding-top: 40px;
+	 text-align: center;
+ }
+
+/** General Stuff
+ */
+.clear {
+	 clear: both;
+}
